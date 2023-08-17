@@ -1,40 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/ddc9162244.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
-    <section>
-        <nav>
+  <body>
+    <section id="landing-page">
+      <nav>
+        <!-- logo -->
+        <div class="logo">
             <div class="container">
-                <div class="row">
-                    <figure id="nav__logo">
-                    <!-- logo -->
-                    </figure>
-                    <ul id="nav__list--links">
-                        <li id="nav__link">
-                            <a href="#">Home</a>
-                        </li>
-                        <li id="nav__link">
-                            <a href="#">Search</a>
-                        </li>
-                        <li id="nav__link">
-                            <a href="#">Contact</a>
-                        </li>
-                    </ul>
-                </div>
+                <a href="" class="nav__logo">
+                <p>Quick<span class="red">Scope</span></p>
+            </a>
             </div>
-        </nav>
+        </div>
+        <!-- end of logo -->
+
+        <!-- nav bar links -->
+        <ul class="nav__link--list">
+          <li class="nav__link">
+            <a href="" class="nav__link--anchor link__hover-effect">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+          </li>
+          <li class="nav__link">
+            <a href="#" class="nav__link--anchor link__hover-effect">Home</a>
+          </li>
+          <li class="nav__link">
+            <a href="#" class="nav__link--anchor link__hover-effect">New</a>
+          </li>
+          <li class="nav__link">
+            <a href="#" class="nav__link--anchor link__hover-effect">Popular</a>
+          </li>
+          <li class="nav__link">
+            <a href="#" class="nav__link--anchor link__hover-effect">Contact</a>
+          </li>
+        </ul>
+        <!-- end of nav bar links -->
+      </nav>
+    <!-- show a random featured movie as the front page with its description and year -->
+    </section>
+    <section id="Featured Movies">
+
     </section>
 
-    <section>
-        
-    </section>
-</body>
-<script src="index.js"></script>
+    <section></section>
+  </body>
+  <script src="index.js"></script>
 </html>
