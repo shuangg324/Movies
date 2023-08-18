@@ -9,6 +9,14 @@
       src="https://kit.fontawesome.com/ddc9162244.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script>$(document).ready(function(){
+        $(".fa-magnifying-glass").click(function() {
+            $(".icon").toggleClass("active");
+            $("input[type='text']").toggleClass("active");
+        });
+    });
+    </script>
   </head>
 
   <body>
@@ -26,16 +34,15 @@
 
         <!-- nav bar links -->
         <div class="nav__link--list">
-          <div class="search__box">
+          <div class="searchbar">
             <input
               type="text"
-              class="search__input"
-              placeholder="Search Movies"
+              class="search-input"
+              placeholder="Start Looking For Something!"
             />
-            <a class="search__btn" href="#">
-              <!-- Seach Icon -->
-              <i class="fas fa-search"></i>
-            </a>
+            <div class="icon">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
           </div>
           <ul class="nav__links">
             <li class="nav__link">
