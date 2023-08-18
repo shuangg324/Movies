@@ -14,10 +14,11 @@
 
 //get movie image
 
-async function movieImg(search) {
-    const URL = await fetch(`http://img.omdbapi.com/?apikey=ecd810e0&s=${search}`);
-    const data = await URL.json();
-    console.log(data);
-}
+// async function movieImg(search) {
+//     const URL = await fetch(`http://img.omdbapi.com/?apikey=ecd810e0&s=${search}`);
+//     const data = await URL.json();
+//     console.log(data);
+// }
 
-movieImg('hunger games')
+// movieImg('hunger games')
+

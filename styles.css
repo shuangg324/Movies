@@ -45,27 +45,63 @@ button {
 
 
 nav {
+    position: absolute;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1700px;
     margin: 0 auto;
     height: 100px;
     padding: 0 20px;
 }
 
 .logo {
-    font-size: 25px;
-    
+    font-size: 25px;   
 }
 
 .nav__logo{
+    color:white; 
+    background:linear-gradient(rgba(216, 201, 203, 0.067),rgb(189, 26, 26));
+}
+
+.search__box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search__input {
+    border-radius:50px;
+    outline:none;
+    width:0;
+    transition: all 300ms ease;
+}
+
+.search__input::placeholder {
     color:white;
+}
+
+.search__btn {
+    position: absolute;
+    right:0;
+    transition: all 300ms ease;
+    color:white;
+}
+
+.search__input:focus {
+    width:240px;
+    padding: 12px 6px;
 }
 
 .nav__link--list {
     display: flex;
+}
+
+.nav__links {
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
