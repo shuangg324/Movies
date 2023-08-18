@@ -10,12 +10,13 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-    <script>$(document).ready(function(){
-        $(".fa-magnifying-glass").click(function() {
-            $(".icon").toggleClass("active");
-            $("input[type='text']").toggleClass("active");
+    <script>
+      $(document).ready(function () {
+        $(".fa-magnifying-glass").click(function () {
+          $(".icon").toggleClass("active");
+          $("input[type='text']").toggleClass("active");
         });
-    });
+      });
     </script>
   </head>
 
@@ -38,7 +39,7 @@
             <input
               type="text"
               class="search-input"
-              placeholder="Start Looking For Something!"
+              placeholder="Search Movies or TV Shows"
             />
             <div class="icon">
               <i class="fa-solid fa-magnifying-glass"></i>
