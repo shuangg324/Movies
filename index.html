@@ -62,7 +62,7 @@
         </div>
         <!-- end of nav bar links -->
       </nav>
-
+<!-- MAKE THESE ROWS ONLY 1 CARD, USE JS TO ADD MORE? MAYBE -->
       <!-- Featured Movies Row -->
       <div class="container">
         <div class="row">
@@ -253,6 +253,42 @@
         </div>
       </div>
     </section>
+    <footer onMouseMove="moveBackground(event)">
+      <div class="container">
+        <div class="row footer__row">
+          <figure>
+            <img src="./assets/logo.svg" class="footer__logo--img" alt="" />
+          </figure>
+          <div class="footer__social--list">
+            <a
+              href="#"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+            >
+              GitHub
+            </a>
+            <a
+              href="#" target="_blank"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+            >
+              LinkedIn
+            </a>
+            <a
+              href="#" target="_blank" onclick="toggleModal()"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+            >
+              Contact
+            </a>
+            <a
+              href="./assets/David Bragg Resume.pdf" target="_blank"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+            >
+              Resume
+            </a>
+          </div>
+          <div class="footer__copyright">Copyright &copy; 2023 Sean Huang</div>
+        </div>
+      </div>
+    </footer>
   </body>
   <script src="index.js"></script>
 </html>
