@@ -5,27 +5,33 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-  background-color: rgb(27, 27, 27);
+}
+
+#landing-page {
+  min-height: 100vh;
+}
+
+section {
+  background-color: rgb(236, 131, 131);
+  transition: all 300ms ease;
 }
 
 .container {
   padding: 50px 0;
-  width: 100%;
 }
 
 .row {
   width: 100%;
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 0 12px;
 }
 
 li {
-    list-style-type:none;
+  list-style-type: none;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 html {
@@ -33,113 +39,136 @@ html {
 }
 
 button {
-    cursor:pointer;
+  cursor: pointer;
 }
 
 .red {
-    color: rgb(141, 11, 11);
-    font-weight:bold;
+  color: rgb(141, 11, 11);
+  font-weight: bold;
 }
 
 /* NAV BAR */
 
-
 nav {
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    max-width: 1700px;
-    margin: 0 auto;
-    height: 100px;
-    padding: 0 20px;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1700px;
+  margin: 0 auto;
+  height: 100px;
+  padding: 0 20px;
 }
 
 .logo {
-    font-size: 25px;   
+  font-size: 25px;
 }
 
-.nav__logo{
-    color:white; 
-    background:linear-gradient(rgba(216, 201, 203, 0.067),rgb(189, 26, 26));
+.nav__logo {
+  color: white;
+  background: linear-gradient(rgba(216, 201, 203, 0.067), rgb(189, 26, 26));
 }
-
 
 .nav__link--list .searchbar {
-    position: relative; 
+  position: relative;
 }
 
 .nav__link--list .searchbar input[type="text"] {
-    border:0;
-    padding: 0 0px;
-    width:0px;
-    height:35px;
-    border-radius:3px;
-    background-color: rgb(0, 0, 0);
-    color: white;
-    outline:none;
+  border: 0;
+  padding: 0 0px;
+  width: 0px;
+  height: 35px;
+  border-radius: 3px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  outline: none;
 }
 
 .nav__link--list .searchbar .icon {
-    position:absolute;
-    top: 0;
-    right: 0;
-    background: none;
-    width:35px;
-    height:100%;
-    border-radius:1px;
-    color: #fff;
-    transition: all 500ms ease;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: none;
+  width: 35px;
+  height: 100%;
+  border-radius: 1px;
+  color: #fff;
+  transition: all 500ms ease;
 }
 
 .nav__link--list .searchbar .icon i {
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%, -50%);
-    cursor:pointer;
-    font-size:24px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  font-size: 24px;
 }
 
 .nav__link--list .searchbar .icon i.active {
-    transition: all 300ms ease;
+  transition: all 300ms ease;
 }
 
 .click:hover {
-    transform: scale(1.1);
-  }
-  
-  .click:active {
-    transform: scale(0.9);
-  }
+  transform: scale(1.1);
+}
+
+.click:active {
+  transform: scale(0.9);
+}
 
 /* MAKE SEARCH BAR RETRACT SMOOTHLY TOO */
 
 .nav__link--list .searchbar input[type="text"].active {
-    width:250px;
-    padding: 0 10px;
-    border: 1px solid white;
-    transition: all 500ms ease;
+  width: 250px;
+  padding: 0 10px;
+  border: 1px solid white;
+  transition: all 500ms ease;
 }
 
-
 .nav__link--list {
-    display: flex;
+  display: flex;
 }
 
 .nav__links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav__link {
-    margin-left:16px;
-    transition: all 300ms ease;
+  margin-left: 16px;
+  transition: all 300ms ease;
 }
 
-.nav__link--anchor{
-    color: rgb(255, 251, 251);
+.nav__link--anchor {
+  color: rgb(255, 251, 251);
+}
+
+/* MOVIE CARD */
+
+.featured__wrapper {
+  padding: 24px;
+}
+
+.card__wrapper {
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 96px 16px;
+  background: white;
+  width: 100%;
+  max-width: 200px;
+  position: relative;
+}
+
+.movie__cards--wrapper {
+  display: flex;
+}
+
+.featured__card {
+  margin-right:24px;
 }

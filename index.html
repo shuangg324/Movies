@@ -12,8 +12,8 @@
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <script>
       $(document).ready(function () {
-        $(".fa-magnifying-glass").click(function () {
-          $(".icon").toggleClass("active");
+        $(".fa-magnifying-glass").click(function (event) {
+          $(".searchbar").toggleClass("open");
           $("input[type='text']").toggleClass("active");
         });
       });
@@ -23,7 +23,6 @@
   <body>
     <section id="landing-page">
       <nav>
-        <!-- logo -->
         <div class="logo">
           <div class="container">
             <a href="">
@@ -31,7 +30,6 @@
             </a>
           </div>
         </div>
-        <!-- end of logo -->
 
         <!-- nav bar links -->
         <div class="nav__link--list">
@@ -66,11 +64,52 @@
         </div>
         <!-- end of nav bar links -->
       </nav>
-      <!-- show a random featured movie as the front page with its description and year -->
+      <div class="container">
+        <div class="row">
+          <div class="featured__wrapper">
+            <h2 class="featured">Featured</h2>
+            <ul class="movie__cards--wrapper">
+              <li class="featured__card">
+                <div class="card__wrapper">
+                  <img class="featured__img" src="" alt="" />
+                  <div class="movie__card">
+                    <div class="movie__title"><h3>Movie:</h3></div>
+                    <div class="movie__description">
+                      <h4>Movie Description:</h4>
+                    </div>
+                    <div class="movie__year">Movie Year:</div>
+                  </div>
+                </div>
+              </li>
+              <li class="featured__card">
+                <div class="card__wrapper">
+                  <img class="featured__img" src="" alt="" />
+                  <div class="movie__card">
+                    <div class="movie__title"><h3>Movie:</h3></div>
+                    <div class="movie__description">
+                      <h4>Movie Description:</h4>
+                    </div>
+                    <div class="movie__year">Movie Year:</div>
+                  </div>
+                </div>
+              </li>
+              <li class="featured__card">
+                <div class="card__wrapper">
+                  <img class="featured__img" src="" alt="" />
+                  <div class="movie__card">
+                    <div class="movie__title"><h3>Movie:</h3></div>
+                    <div class="movie__description">
+                      <h4>Movie Description:</h4>
+                    </div>
+                    <div class="movie__year">Movie Year:</div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
-    <section id="Featured Movies"></section>
-
-    <section></section>
   </body>
   <script src="index.js"></script>
 </html>
