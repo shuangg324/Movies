@@ -184,3 +184,9 @@ body {
 .featured__card {
   margin-right:24px;
 }
+
+
+/* footer */
+footer {
+  background-color: grey;
+}
