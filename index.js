@@ -8,24 +8,22 @@ async function loadMovies(title) {
     `http://www.omdbapi.com/?apikey=ecd810e0&s=${title}`
   );
   const movieTitleData = await movieTitle.json();
-  const movieTitleArray = movieTitleData.Search.slice(0,3); //Search.slice(0,8) shows first 8 movies
+  const movieTitleArray = movieTitleData.Search.splice(0,8); //Search.slice(0,8) shows first 8 movies
   const movieEl = document.querySelector(".movie__cards--wrapper")
   movieEl.innerHTML = (movieTitleArray.map(movie => movieHTML(movie)).join(""))
-
+    console.log(movieTitleArray)
 
 }
 
 function movieHTML(movie) {
     return `<li class="click featured__card">
-    <div class="card__wrapper">
-    <img class="featured__img" src="" alt="" />
-        <div class="movie__card">
+                    <img class="featured__img" src="${movie.Poster}
+                    " alt="" />
         <div class="movie__title"><h3>${movie.Title}</h3></div>
-        </div>
-    </div>
 </li>`;
 }
 
 
-loadMovies("fast");
+loadMovies("batman");
+
 
