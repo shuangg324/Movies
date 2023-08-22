@@ -16,7 +16,7 @@ body {
 }
 
 section {
-  background-color: rgb(236, 131, 131);
+  background-color: rgb(17, 16, 16);
   transition: all 300ms ease;
 }
 
@@ -120,6 +120,7 @@ nav {
 
 .click {
   transition: all 300ms ease;
+  cursor:pointer;
 }
 
 .click:hover {
@@ -167,29 +168,36 @@ nav {
 
 .movie__cards--wrapper {
   display: flex;
-  margin-top: 24px;
-  margin-left: 16px;
+  padding-left: 96px;
+  padding-top: 24px;
   flex-wrap:wrap;
   width:100%;
 }
 
 .featured {
   text-align: center;
-  font-size: 36px;
+  font-size: 24px;
+  color: white;
+  margin-bottom: 8px;
 }
 
 .featured__card {
-  padding-right:24px;
   padding-bottom: 24px;
   width:25%;
 }
 
-
-.featured__img {
-  overflow: hidden;
+.movie__title {
+  color: white;
 }
 
+/* HEADER */
 
+.header__title, .subheader {
+  text-align: center;
+  padding: 8px 0;
+  font-size: 48px;
+  color: white;
+}
 
 /* footer */
 footer {
