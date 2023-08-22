@@ -2,23 +2,30 @@
 //POSTER API: http://img.omdbapi.com/?apikey=ecd810e0&
 
 
-// load movies
+async function loadMovies(title) {
 
-// async function loadMovies(search) {
-//     const URL = await fetch(`http://www.omdbapi.com/?apikey=ecd810e0&s=${search}`)
-//     const data = await URL.json();
-//     console.log(data);
-// }
+  const movieTitle = await fetch(
+    `http://www.omdbapi.com/?apikey=ecd810e0&s=${title}`
+  );
+  const movieTitleData = await movieTitle.json();
+  const movieTitleArray = movieTitleData.Search.slice(0,3); //Search.slice(0,8) shows first 8 movies
+  const movieEl = document.querySelector(".movie__cards--wrapper")
+  movieEl.innerHTML = (movieTitleArray.map(movie => movieHTML(movie)).join(""))
 
-// loadMovies('lord')
 
-//get movie image
+}
 
-// async function movieImg(search) {
-//     const URL = await fetch(`http://img.omdbapi.com/?apikey=ecd810e0&s=${search}`);
-//     const data = await URL.json();
-//     console.log(data);
-// }
+function movieHTML(movie) {
+    return `<li class="click featured__card">
+    <div class="card__wrapper">
+    <img class="featured__img" src="" alt="" />
+        <div class="movie__card">
+        <div class="movie__title"><h3>${movie.Title}</h3></div>
+        </div>
+    </div>
+</li>`;
+}
 
-// movieImg('hunger games')
+
+loadMovies("fast");
 
