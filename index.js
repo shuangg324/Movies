@@ -8,7 +8,8 @@ async function loadMovies(title) {
     `http://www.omdbapi.com/?apikey=ecd810e0&s=${title}`
   );
   const movieTitleData = await movieTitle.json();
-  const movieTitleArray = movieTitleData.Search.splice(0,8); //Search.slice(0,8) shows first 8 movies
+  const movieInfoEl = document.querySelector("movie__info--wrapper");
+  const movieTitleArray = movieTitleData.Search.splice(0,10); //Search.slice(0,8) shows first 8 movies
   const movieEl = document.querySelector(".movie__cards--wrapper")
   movieEl.innerHTML = (movieTitleArray.map(movie => movieHTML(movie)).join(""))
     console.log(movieTitleArray)
@@ -22,8 +23,17 @@ function movieHTML(movie) {
         <div class="movie__title"><h3>${movie.Title}</h3></div>
 </li>`;
 }
+loadMovies("demon slayer");
+
+function movieSearch() {
+    const searchBarInput = document.getElementById("searchInput");
+    const searchTerm = searchBarInput.value.trim();
+    console.log(searchTerm);
+}
 
 
-loadMovies("batman");
+
+
+  
 
 
