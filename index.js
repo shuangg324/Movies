@@ -9,7 +9,7 @@ async function loadMovies(title) {
         url + `s=${title}`
     );
     const movieTitleData = await movieTitle.json();
-    const movieTitleArray = movieTitleData.Search.slice(0, 10); //Search.slice(0,10) shows first 8 movies
+    const movieTitleArray = movieTitleData.Search.slice(0, 10); //convert movieTitleData to array with .Search (this way we can use .map function)...Search.slice(0,10) shows first 8 movies
     const movieEl = document.querySelector(".movie__cards--wrapper");
     movieEl.innerHTML = movieTitleArray.map((movie) => movieHTML(movie)).join("");
     console.log(movieTitleArray);
@@ -17,12 +17,6 @@ async function loadMovies(title) {
     const searchTitleEl = document.querySelector(".title"); 
     searchTitleEl.innerHTML = `Results for: ${title}`;
 }
-
-// function showMovieInfo(id) {
-//     console.log(window.location);
-//     // window.location.href = 
-//     console.log(id);
-// }
 
 function movieHTML(movie) {
   return `<li class="click featured__card">
@@ -33,10 +27,8 @@ function movieHTML(movie) {
 }
 
 
-function searchMovie(event) {
-    title = event.target.value;
-    event.preventDefault();
-    loadMovies();
+async function searchMovie(event) {
+    const title = event.target.value;
+    loadMovies(title);
   }
 
-// onclick="showMovieInfo(${movie.imdbID})"
