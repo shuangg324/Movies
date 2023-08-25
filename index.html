@@ -44,7 +44,7 @@
           </div>
           <ul class="nav__links">
             <li class="nav__link click">
-              <a href="#" class="nav__link--anchor link__hover-effect">Home</a>
+              <a href="" class="nav__link--anchor link__hover-effect">Home</a>
             </li>
             <li class="nav__link click">
               <a href="#" class="nav__link--anchor link__hover-effect">New</a>
@@ -68,7 +68,7 @@
       <header class="header__title">
         <h1>Choose from thousands of <a class="red" href="">Movies</a></h1>
       </header>
-      
+
       <!-- make TV shows link to a featured tv shows page in the future -->
       <h2 class="subheader">
         Find your favorite <a class="red" href="">TV Shows</a>
@@ -80,8 +80,18 @@
         <div class="featured__wrapper">
           <h2 class="featured title">
             <span class="red">Featured</span> Films
+            <select class ="filterMovie" id="filter" onchange="filterMovies(event)">
+              <option value="" disabled selected>Filter</option>
+              <option value="NEW_TO_OLD">Newest</option>
+              <option value="OLD_TO_NEW">Oldest</option>
+              <option value="RATING">Rating</option>
+            </select>
           </h2>
-          <ul class="movie__cards--wrapper">
+          
+          <div class="loading">
+            <i class="fas fa-spinner loading__spinner"></i>
+          </div>
+          <ul class="movie__cards--wrapper ">
             <li class="click featured__card">
               <img
                 class="featured__img"
