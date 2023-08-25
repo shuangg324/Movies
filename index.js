@@ -1,7 +1,7 @@
 //DATA REQUESTS API: http://www.omdbapi.com/?apikey=ecd810e0&
 //POSTER API: http://img.omdbapi.com/?apikey=ecd810e0&
 
-const url = "http://www.omdbapi.com/?apikey=ecd810e0&";
+const url = "https://www.omdbapi.com/?apikey=ecd810e0&";
 let title='';
 
 async function loadMovies(filter) {
