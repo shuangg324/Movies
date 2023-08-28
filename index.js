@@ -56,7 +56,7 @@ function movieHTML(movie) {
 }
 
 async function searchMovie(event) {
-  const title = event.target.value;
+  title = event.target.value;
   event.preventDefault();
   loadMovies(title);
 }

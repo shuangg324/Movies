@@ -18,7 +18,7 @@
         });
       });
     </script>
-    <script src="index.js"></script>
+    <script defer src="index.js"></script>
   </head>
 
   <body>
@@ -34,9 +34,9 @@
         <div class="nav__link--list">
           <div class="searchbar">
             <input
-              onchange="searchMovie(event)"
               type="text"
               placeholder="Search Movies or TV Shows"
+              onchange="searchMovie(event)"
             />
             <div class="icon click">
               <i class="fa-solid fa-magnifying-glass"></i>

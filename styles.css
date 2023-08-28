@@ -281,7 +281,6 @@ footer {
     left: 0;
     right: 0;
     bottom: 900px;
-
 }
 
 .loading__spinner {
@@ -291,6 +290,7 @@ footer {
 .loading .loading__spinner {
   display: block;
 }
+
 
 
 .filterMovie {
