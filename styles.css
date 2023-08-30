@@ -206,6 +206,10 @@ nav {
   margin-top: 8px;
 }
 
+.movie__year {
+  color:white;
+}
+
 .movie__descriptions {
   color:white;
 }
@@ -301,6 +305,26 @@ footer {
   text-align: center;
 }
 
+@media (max-width: 1500px) {
+  .featured__card {
+    width:25%;
+  }
+
+}
+
+@media (max-width: 1200px) {
+  .featured__card {
+    width:33%;
+  }
+
+}
+
+
+@media (max-width: 968px) {
+  .featured__card {
+    width:50%;
+  }
+}
 
 
 

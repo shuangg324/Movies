@@ -14,7 +14,7 @@
       $(document).ready(function () {
         $(".fa-magnifying-glass").click(function (event) {
           $(".searchbar").toggleClass("open");
-          $("input[type='text']").toggleClass("active");
+          $("input[type='text']").val('').toggleClass("active");
         });
       });
     </script>
@@ -74,24 +74,17 @@
         Find your favorite <a class="red" href="">TV Shows</a>
       </h2>
 
-
       <!-- Featured Movies -->
       <div class="container">
         <div class="featured__wrapper">
           <h2 class="featured title">
             <span class="red">Featured</span> Films
-            <select class ="filterMovie" id="filter" onchange="filterMovies(event)">
-              <option value="" disabled selected>Filter</option>
-              <option value="NEW_TO_OLD">Newest</option>
-              <option value="OLD_TO_NEW">Oldest</option>
-              <option value="RATING">Rating</option>
-            </select>
           </h2>
-          
+
           <div class="loading">
             <i class="fas fa-spinner loading__spinner"></i>
           </div>
-          <ul class="movie__cards--wrapper ">
+          <ul class="movie__cards--wrapper">
             <li class="click featured__card">
               <img
                 class="featured__img"
@@ -129,7 +122,9 @@
                 alt=""
               />
               <div class="movie__title">
-                <h3>Demon Slayer: Kimetsu No Yaiba - To the Swordsmith Village</h3>
+                <h3>
+                  Demon Slayer: Kimetsu No Yaiba - To the Swordsmith Village
+                </h3>
               </div>
             </li>
             <li class="click featured__card">
@@ -233,7 +228,9 @@
               Resume
             </a>
           </div>
-          <div class="white footer__copyright">Copyright &copy; 2023 Sean Huang</div>
+          <div class="white footer__copyright">
+            Copyright &copy; 2023 Sean Huang
+          </div>
         </div>
       </div>
     </footer>
