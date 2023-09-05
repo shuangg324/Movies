@@ -17,7 +17,7 @@ async function loadMovies(filter) {
   const movieTitle = await fetch(url + `s=${title}`);
 
   const movieTitleData = await movieTitle.json();
-  const movieTitleArray = movieTitleData.Search.slice(0, 10); //convert movieTitleData to array with .Search (this way we can use .map function)...Search.slice(0,10) shows first 8 movies
+  const movieTitleArray = movieTitleData.Search.slice(0, 10); //converts movieTitleData to array with .Search (this way we can use .map function)...Search.slice(0,10) shows first 8 movies
   const movieEl = document.querySelector(".movie__cards--wrapper");
 
   if (!movieEl) {
