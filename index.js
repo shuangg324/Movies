@@ -8,7 +8,7 @@ async function loadMovies(filter) {
   const loadingEl = document.querySelector(".loading");
 
   setTimeout(() => {
-    loadingEl.classList += " loading__spin";//
+    loadingEl.classList += " loading__spin";
   }, 200);
 
   const res = document.querySelector(".movie__cards--wrapper");
