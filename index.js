@@ -72,7 +72,7 @@ function filterMovies(event) {
 
 //Preloaded Movies
 
-function preMovies() { //
+function preMovies() { 
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve([
